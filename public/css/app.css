@@ -1,0 +1,19 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+body.namespace-seopage {
+  background: url("../img/bg.jpg");
+}
+.namespace-seopage .seo-page {
+  background: white;
+}
+.namespace-seopage .inner-row {
+  margin-top: 0;
+}
+.namespace-seopage .row {
+  padding-top: 0;
+}
+
+/*# sourceMappingURL=maps/app.css.map */
