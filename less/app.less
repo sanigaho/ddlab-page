@@ -1,4 +1,9 @@
+@import "components/fonts";
+@import "components/helpers";
 @import "components/layout";
+@import "components/topbar";
+@import "components/sp-banner";
+@import "components/plans";
 
 body.namespace-seopage {
     background: url("../img/bg.jpg");
@@ -7,6 +12,7 @@ body.namespace-seopage {
 .namespace-seopage {
     .seo-page {
         background: white;
+        box-shadow: 0 0 18px rgba(0, 0, 0, .19);
     }
 
     .inner-row {
@@ -15,5 +21,10 @@ body.namespace-seopage {
 
     .row {
         padding-top: 0;
+    }
+
+    .with-padding {
+        padding-right: 10px;
+        padding-left: 10px;
     }
 }

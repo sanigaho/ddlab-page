@@ -1,19 +1,392 @@
-.container {
+@font-face {
+  font-family: 'DinDisplayPro-Light';
+  src: url('../fonts/PFDinDisplayPro-Light.eot');
+  src: local('☺'), url('../fonts/PFDinDisplayPro-Light.woff') format('woff'), url('../fonts/PFDinDisplayPro-Light.ttf') format('truetype'), url('../fonts/PFDinDisplayPro-Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('../fonts/Roboto-Black.eot');
+  src: local('☺'), url('../fonts/Roboto-Black.woff') format('woff'), url('../fonts/Roboto-Black.ttf') format('truetype'), url('../fonts/Roboto-Black.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* font-family: "RexLight"; */
+@font-face {
+  font-family: "RexLight";
+  src: url("../fonts/RexLight/RexLight.eot");
+  src: url("../fonts/RexLight/RexLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RexLight/RexLight.woff") format("woff"), url("../fonts/RexLight/RexLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RexBold"; */
+@font-face {
+  font-family: "RexBold";
+  src: url("../fonts/RexBold/RexBold.eot");
+  src: url("../fonts/RexBold/RexBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RexBold/RexBold.woff") format("woff"), url("../fonts/RexBold/RexBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RexBoldInline"; */
+@font-face {
+  font-family: "RexBoldInline";
+  src: url("../fonts/RexBoldInline/RexBoldInline.eot");
+  src: url("../fonts/RexBoldInline/RexBoldInline.eot?#iefix") format("embedded-opentype"), url("../fonts/RexBoldInline/RexBoldInline.woff") format("woff"), url("../fonts/RexBoldInline/RexBoldInline.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.eot');
+  src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.eot');
+  src: local('☺'), url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.ttf') format('truetype'), url('../fonts/Roboto-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DinDisplayPro-Bold';
+  src: url('../fonts/PFDinDisplayPro-Bold.eot');
+  src: local('☺'), url('../fonts/PFDinDisplayPro-Bold.woff') format('woff'), url('../fonts/PFDinDisplayPro-Bold.ttf') format('truetype'), url('../fonts/PFDinDisplayPro-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after,
+.clearfix:before {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.hidden {
+  display: none;
+}
+.namespace-seopage .container {
   width: 1000px;
+  min-width: 1000px;
   margin: 0 auto;
   position: relative;
+}
+.namespace-seopage .sp-inner-container {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+.sp-phone-row {
+  *zoom: 1;
+  padding-bottom: 10px;
+}
+.sp-phone-row:after,
+.sp-phone-row:before {
+  content: " ";
+  display: table;
+}
+.sp-phone-row:after {
+  clear: both;
+}
+.sp-phone-block {
+  font-family: 'DinDisplayPro-Light';
+  background: #7fcd13;
+  font-size: 17px;
+  color: white;
+  float: right;
+  margin-right: 13px;
+  box-shadow: 1px 1px 1px rgba(72, 87, 0, 0.28);
+  text-align: center;
+  padding: 6px 13px;
+  line-height: 20px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.namespace-seopage .sp-banner-row {
+  margin-bottom: 10px;
+}
+.namespace-seopage .sp-banner-1 {
+  height: 263px;
+  background: url(../img/banner-1-bg.jpg) no-repeat;
+  background-size: contain;
+}
+.namespace-seopage .sp-banner-1 .sp-header {
+  font-size: 30px;
+  font-family: 'DinDisplayPro-Bold';
+  text-transform: uppercase;
+  color: white;
+  line-height: 30px;
+  position: absolute;
+  top: 56px;
+  left: 32px;
+}
+.namespace-seopage .sp-banner-1 .sp-list {
+  font-family: 'DinDisplayPro-Bold';
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  left: 54px;
+  top: 139px;
+}
+.namespace-seopage .sp-banner-1 .sp-list li {
+  list-style-image: url(../img/banner-1-dot.png);
+  margin-bottom: 5px;
+}
+.namespace-seopage .sp-banner-1 .sp-btn {
+  display: inline-block;
+  background: url(../img/banner-1-btn.png) no-repeat;
+  width: 216px;
+  height: 47px;
+  position: absolute;
+  top: 178px;
+  left: 394px;
+  font-family: 'DinDisplayPro-Bold';
+  font-size: 14px;
+  text-align: center;
+  line-height: 47px;
+  text-decoration: none;
+  color: white;
+}
+.namespace-seopage .sp-banner-2 {
+  height: 263px;
+  background: url(../img/banner-2-bg.jpg) no-repeat;
+  background-size: contain;
+}
+.namespace-seopage .sp-banner-2 .left {
+  width: 560px;
+  float: left;
+  position: relative;
+  *zoom: 1;
+  height: 263px;
+}
+.namespace-seopage .sp-banner-2 .left:after,
+.namespace-seopage .sp-banner-2 .left:before {
+  content: " ";
+  display: table;
+}
+.namespace-seopage .sp-banner-2 .left:after {
+  clear: both;
+}
+.namespace-seopage .sp-banner-2 .left .text-1,
+.namespace-seopage .sp-banner-2 .left .text-2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'Roboto-Bold';
+  position: absolute;
+  text-align: center;
+  width: 288px;
+  top: 57px;
+}
+.namespace-seopage .sp-banner-2 .left .text-1 {
+  color: #05a2b5;
+  top: 75px;
+}
+.namespace-seopage .sp-banner-2 .left .text-2 {
+  color: #ee5ba8;
+  right: 0;
+}
+.namespace-seopage .sp-banner-2 .left .sp-btn {
+  position: absolute;
+  bottom: 13px;
+  color: #05a2b5;
+  border: 2px solid #05a2b5;
+  display: inline-block;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0 28px;
+  padding-right: 35px;
+  line-height: 36px;
+  left: 145px;
+}
+.namespace-seopage .sp-banner-2 .left .sp-btn:after {
+  position: absolute;
+  content: '';
+  background: url(../img/sp-banner-2-btn-arrow-right.png) no-repeat;
+  width: 7px;
+  height: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 10px;
+}
+.namespace-seopage .sp-banner-2 ul.sp-list {
+  margin: 0 !important;
+  padding: 0;
+  list-style: none;
+  font-family: 'Roboto-Bold';
+  font-size: 19px;
+  position: absolute;
+  top: 48px;
+  left: 654px;
+  width: 324px;
+}
+.namespace-seopage .sp-banner-2 ul.sp-list li {
+  list-style-image: url(../img/banner-2-dot.png);
+  color: white;
+  margin-bottom: 10px;
+}
+.namespace-seopage .sp-banner-3 {
+  height: 263px;
+  background: url(../img/banner-3-bg.jpg) no-repeat;
+  background-size: contain;
+}
+.namespace-seopage .sp-banner-3 .sp-inner-container .left {
+  float: left;
+  margin-right: 50px;
+  padding-left: 72px;
+  position: relative;
+}
+.namespace-seopage .sp-banner-3 .sp-inner-container .left .text-1 {
+  font-family: 'Roboto-Black';
+  text-transform: uppercase;
+  margin-top: 55px;
+  color: #63ffd2;
+  font-size: 36px;
+}
+.namespace-seopage .sp-banner-3 .sp-inner-container .left .text-2 {
+  color: white;
+  font-size: 35px;
+  font-family: 'Roboto-Black';
+  text-transform: uppercase;
+}
+.namespace-seopage .sp-banner-3 .sp-inner-container .left .text-3 {
+  position: absolute;
+  right: 0;
+  top: 102px;
+}
+.namespace-seopage .sp-banner-3 .sp-inner-container .left .text-3 .big {
+  color: #63ffd2;
+  font-size: 63px;
+  font-family: "RexBoldInline";
+  margin-bottom: 4px;
+}
+.namespace-seopage .sp-banner-3 .sp-inner-container .left .text-3 .small {
+  font-family: 'Roboto-Regular';
+  color: white;
+  font-size: 15px;
+  margin-top: -13px;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.namespace-seopage .sp-banner-3 .sp-inner-container .right {
+  font-size: 18px;
+  color: white;
+  font-family: 'Roboto-Regular';
+  width: 450px;
+  position: absolute;
+  top: 58px;
+  left: 520px;
+}
+.namespace-seopage .sp-banner-3 .sp-btn {
+  background: #fece11;
+  font-size: 18px;
+  font-family: 'Roboto-Regular';
+  color: black;
+  text-decoration: none;
+  line-height: 38px;
+  border-radius: 0;
+  padding: 0 29px;
+  display: inline-block;
+  border-radius: 3px;
+}
+.namespace-seopage .sp-banner-3 ul.sp-list {
+  margin: 0;
+  padding: 0;
+}
+.namespace-seopage .sp-banner-3 ul.sp-list li {
+  list-style-image: url(../img/list-dot.png);
+  margin-bottom: 18px;
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 1, 1, 0.86);
+}
+.sp-plans-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sp-plans-row .sp-plan-item {
+  position: relative;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 389px;
+}
+.sp-plans-row .sp-plan-item .sp-plan-head {
+  color: #00b2de;
+}
+.sp-plans-row .sp-plan-item:hover .hover {
+  opacity: 1;
+  pointer-events: all;
+}
+.sp-plans-row .sp-plan-item .hover {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  background: #00b2de;
+  color: white;
+  transition: opacity .4s, background .4s, color .4s;
+}
+.sp-plans-row .sp-plan-item .hover .sp-plan-head {
+  color: white;
+}
+.sp-plans-row .sp-plan-element.border-bottom {
+  border-bottom: 1px solid #00b2de;
+}
+.sp-plans-row .sp-plan-element.with-border {
+  border: 1px solid white;
+  border-radius: 5px;
 }
 body.namespace-seopage {
   background: url("../img/bg.jpg");
 }
 .namespace-seopage .seo-page {
   background: white;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.19);
 }
 .namespace-seopage .inner-row {
   margin-top: 0;
 }
 .namespace-seopage .row {
   padding-top: 0;
+}
+.namespace-seopage .with-padding {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

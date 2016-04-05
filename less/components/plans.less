@@ -1,0 +1,52 @@
+.sp-plans-row {
+    display: flex;
+
+    .sp-plan-item {
+        position: relative;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 389px;
+
+        .sp-plan-head {
+            color: #00b2de;
+        }
+
+        &:hover .hover {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .hover {
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            pointer-events: none;
+            background: #00b2de;
+            color: white;
+            transition: opacity .4s, background .4s, color .4s;
+
+            .sp-plan-head {
+                color: white;
+            }
+        }
+    }
+
+    .sp-plan-element {
+        &.border-bottom {
+            border-bottom: 1px solid #00b2de;
+        }
+
+        &.with-border {
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+    }
+}
