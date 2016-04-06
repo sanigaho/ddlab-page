@@ -1,0 +1,64 @@
+.sp-clients-row {
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    padding-bottom: 37px;
+
+    .sp-clients-header {
+        text-align: center;
+        color: #00aeef;
+        font-size: 30px;
+        font-family: 'DinDisplayPro-Bold';
+        margin-bottom: 30px;
+    }
+
+    .left {
+        position: relative;
+        float: left;
+        width: 600px;
+        border-right: 1px solid #00aeef;
+
+        &:after {
+            display: block;
+            content: '';
+            width: 80px;
+            height: 1px;
+            background: #00aeef;
+            transform: rotate(180deg);
+            position: absolute;
+            top: 50%;
+            right: -80px;
+        }
+    }
+
+    .client {
+        display: inline-block;
+        border: 2px solid transparent;
+
+        &.selected {
+            border-color: #00aeef;
+        }
+    }
+
+    .right {
+        position: absolute;
+        top: 142px;
+        left: 750px;
+        width: 200px;
+        text-align: center;
+
+        .sp-client-title {
+            font-family: 'DinDisplayPro-Light';
+            font-size: 18px;
+            color: black;
+            margin-bottom: 5px;
+        }
+
+        .sp-client-url {
+            font-family: 'DinDisplayPro-Light';
+            font-size: 18px;
+            color: #00a8e7;
+        }
+    }
+}

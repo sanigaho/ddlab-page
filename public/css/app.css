@@ -577,6 +577,63 @@
   line-height: 39px;
   font-size: 18px;
 }
+.sp-clients-row {
+  padding-top: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+  padding-bottom: 37px;
+}
+.sp-clients-row .sp-clients-header {
+  text-align: center;
+  color: #00aeef;
+  font-size: 30px;
+  font-family: 'DinDisplayPro-Bold';
+  margin-bottom: 30px;
+}
+.sp-clients-row .left {
+  position: relative;
+  float: left;
+  width: 600px;
+  border-right: 1px solid #00aeef;
+}
+.sp-clients-row .left:after {
+  display: block;
+  content: '';
+  width: 80px;
+  height: 1px;
+  background: #00aeef;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  top: 50%;
+  right: -80px;
+}
+.sp-clients-row .client {
+  display: inline-block;
+  border: 2px solid transparent;
+}
+.sp-clients-row .client.selected {
+  border-color: #00aeef;
+}
+.sp-clients-row .right {
+  position: absolute;
+  top: 142px;
+  left: 750px;
+  width: 200px;
+  text-align: center;
+}
+.sp-clients-row .right .sp-client-title {
+  font-family: 'DinDisplayPro-Light';
+  font-size: 18px;
+  color: black;
+  margin-bottom: 5px;
+}
+.sp-clients-row .right .sp-client-url {
+  font-family: 'DinDisplayPro-Light';
+  font-size: 18px;
+  color: #00a8e7;
+}
 body.namespace-seopage {
   background: url("../img/bg.jpg");
 }
