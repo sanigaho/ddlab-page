@@ -1,0 +1,21 @@
+{
+  "name": "ddlab-page",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Nikita Kiselev <kiselev2008@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/nikitakiselev/ddlab-page",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick": "*",
+    "slick-carousel": "^1.5.9"
+  }
+}

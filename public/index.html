@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>ddlab page</title>
     <link rel="stylesheet" href="http://www.ddlab.ru/wp-content/themes/ddtemplate/assets/static/styles.all.css">
+
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body class="namespace-seopage">
@@ -53,59 +55,61 @@
                     </div>
                 
                     <div class="sp-banner-row with-padding">
-                        <div class="sp-banner-1">
-                            <div class="sp-inner-container clearfix">
-                                <header class="sp-header">
-                                    Целевые звонки с сайта, <br>
-                                    Комплексная реклама
-                                </header>
-                        
-                                <ul class="sp-list">
-                                    <li>Контекстная реклама</li>
-                                    <li>Доски объявлений</li>
-                                    <li>Рекламные партнёрские сети Яндекс</li>
-                                    <li>RTB и медийная реклама</li>
-                                </ul>
-                        
-                                <a href="#" class="sp-btn">Получить расчёт</a>
-                            </div>
-                        </div>
-                        <div class="sp-banner-2 hidden">
-                            <div class="sp-inner-container clearfix">
-                                <div class="left">
-                                    <div class="text-1">содание продающего сайта</div>
-                                    <div class="text-2">Лендинг страница или полноценный сайт</div>
-                                    <a href="#" class="sp-btn">Получить расчёт</a>
-                                </div>
-                        
-                                <div class="right">
+                        <div id="slick-slider">
+                            <div class="sp-banner sp-banner-1">
+                                <div class="sp-inner-container clearfix">
+                                    <header class="sp-header">
+                                        Целевые звонки с сайта, <br>
+                                        Комплексная реклама
+                                    </header>
+                            
                                     <ul class="sp-list">
-                                        <li>Управляемый сайт-визитка или посадочная страница</li>
-                                        <li>Эффективный продающий дизайн</li>
-                                        <li>Визуализация предложения или акции</li>
-                                        <li>Большой набор средств завлечения клиента</li>
+                                        <li>Контекстная реклама</li>
+                                        <li>Доски объявлений</li>
+                                        <li>Рекламные партнёрские сети Яндекс</li>
+                                        <li>RTB и медийная реклама</li>
                                     </ul>
+                            
+                                    <a href="#" class="sp-btn" data-modal="#callback">Получить расчёт</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="sp-banner-3 hidden">
-                            <div class="sp-inner-container clearfix">
-                                <div class="left">
-                                    <div class="text-1">Продвижение сайтов</div>
-                                    <div class="text-2">Ваш сайт</div>
-                                    <div class="text-3">
-                                        <div class="big">ТОП 5-10</div>
-                                        <div class="small">поисковиков</div>
-                                        <a href="#" class="sp-btn">Получить расчёт</a>
+                            <div class="sp-banner sp-banner-2">
+                                <div class="sp-inner-container clearfix">
+                                    <div class="left">
+                                        <div class="text-1">содание продающего сайта</div>
+                                        <div class="text-2">Лендинг страница или полноценный сайт</div>
+                                        <a href="#" class="sp-btn" data-modal="#callback">Получить расчёт</a>
+                                    </div>
+                            
+                                    <div class="right">
+                                        <ul class="sp-list">
+                                            <li>Управляемый сайт-визитка или посадочная страница</li>
+                                            <li>Эффективный продающий дизайн</li>
+                                            <li>Визуализация предложения или акции</li>
+                                            <li>Большой набор средств завлечения клиента</li>
+                                        </ul>
                                     </div>
                                 </div>
-                        
-                                <div class="right">
-                                    <ul class="sp-list">
-                                        <li>Анализ конкурентов и подбор целевых поисковых фраз</li>
-                                        <li>Закрепление сайта в поисковой выдаче на верхних позициях</li>
-                                        <li>Улучшение сайта - повышение эффективности взаимодействия с клиентом</li>
-                                    </ul>
+                            </div>
+                            <div class="sp-banner sp-banner-3">
+                                <div class="sp-inner-container clearfix">
+                                    <div class="left">
+                                        <div class="text-1">Продвижение сайтов</div>
+                                        <div class="text-2">Ваш сайт</div>
+                                        <div class="text-3">
+                                            <div class="big">ТОП 5-10</div>
+                                            <div class="small">поисковиков</div>
+                                            <a href="#" class="sp-btn" data-modal="#callback">Получить расчёт</a>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="right">
+                                        <ul class="sp-list">
+                                            <li>Анализ конкурентов и подбор целевых поисковых фраз</li>
+                                            <li>Закрепление сайта в поисковой выдаче на верхних позициях</li>
+                                            <li>Улучшение сайта - повышение эффективности взаимодействия с клиентом</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -305,18 +309,19 @@
                         <div class="right">
                             <div class="sp-steps-header">Запросить коммерческое предложение</div>
                     
-                            <form action="#" class="sp-form">
+                            <form action="/form-handler.php" class="sp-form ajax-form" id="callback-form">
+                                <input type="hidden" name="form_id" value="callback">
                                 <div class="sp-form-group">
-                                    <input type="text" class="sp-form-control" name="field1" value="">
+                                    <input type="text" class="sp-form-control" name="name" value="" placeholder="Ваше имя">
                                 </div>
                                 <div class="sp-form-group">
-                                    <input type="text" class="sp-form-control" name="field2" value="">
+                                    <input type="text" class="sp-form-control" name="email" value="" placeholder="Ваш email">
                                 </div>
                                 <div class="sp-form-group">
-                                    <input type="text" class="sp-form-control" name="field3" value="">
+                                    <input type="text" class="sp-form-control" name="phone" value="" placeholder="Ваш телефон">
                                 </div>
                                 <div class="sp-form-group">
-                                    <select name="field4" class="sp-form-control">
+                                    <select name="service" class="sp-form-control">
                                         <option value="1">Услуга</option>
                                     </select>
                                 </div>
@@ -370,6 +375,45 @@
                         </div>
                     
                     </div>
+                
+                    <div id="callback" class="sp-modal-bg">
+                        <div class="sp-modal">
+                            <div class="sp-modal-close" title="Закрыть"></div>
+                            <div class="sp-modal-inner">
+                                <div class="text-center">
+                                    <div class="sp-modal-header">Хотите получить расчёт</div>
+                                </div>
+                    
+                                <form action="/form-handler.php" id="form-modal" class="ajax-form">
+                                    <input type="hidden" name="form_id" value="callback"/>
+                    
+                                    <div class="sp-modal-form-row">
+                                        <div class="sp-modal-form-group">
+                                            <input type="text" name="name" class="sp-modal-form-control" placeholder="Ваше имя">
+                                        </div>
+                                        <div class="sp-modal-form-group">
+                                            <input type="text" name="phone" class="sp-modal-form-control" placeholder="Ваш телефон">
+                                        </div>
+                                    </div>
+                    
+                                    <div class="sp-modal-form-row">
+                                        <div class="sp-modal-form-group">
+                                            <input type="email" name="email" class="sp-modal-form-control" placeholder="Ваш email">
+                                        </div>
+                                        <div class="sp-modal-form-group">
+                                            <select name="service" class="sp-modal-form-control">
+                                                <option value="1">Услуга</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="text-center">
+                                        <button type="submit" class="sp-modal-submit">Отправить заявку</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -388,6 +432,8 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="/js/AjaxForm.js"></script>
     <script src="/js/scripts.js"></script>
 </body>
 </html>

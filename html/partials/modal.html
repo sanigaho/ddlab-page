@@ -1,0 +1,38 @@
+<div id="callback" class="sp-modal-bg">
+    <div class="sp-modal">
+        <div class="sp-modal-close" title="Закрыть"></div>
+        <div class="sp-modal-inner">
+            <div class="text-center">
+                <div class="sp-modal-header">Хотите получить расчёт</div>
+            </div>
+
+            <form action="/form-handler.php" id="form-modal" class="ajax-form">
+                <input type="hidden" name="form_id" value="callback"/>
+
+                <div class="sp-modal-form-row">
+                    <div class="sp-modal-form-group">
+                        <input type="text" name="name" class="sp-modal-form-control" placeholder="Ваше имя">
+                    </div>
+                    <div class="sp-modal-form-group">
+                        <input type="text" name="phone" class="sp-modal-form-control" placeholder="Ваш телефон">
+                    </div>
+                </div>
+
+                <div class="sp-modal-form-row">
+                    <div class="sp-modal-form-group">
+                        <input type="email" name="email" class="sp-modal-form-control" placeholder="Ваш email">
+                    </div>
+                    <div class="sp-modal-form-group">
+                        <select name="service" class="sp-modal-form-control">
+                            <option value="1">Услуга</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="sp-modal-submit">Отправить заявку</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

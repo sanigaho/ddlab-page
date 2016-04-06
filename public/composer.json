@@ -1,0 +1,12 @@
+{
+    "name": "nikita/public",
+    "require": {
+        "digitalhammer/lpforms": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Nikita Kiselev",
+            "email": "kiselev2008@gmail.com"
+        }
+    ]
+}

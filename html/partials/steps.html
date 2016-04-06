@@ -25,18 +25,19 @@
     <div class="right">
         <div class="sp-steps-header">Запросить коммерческое предложение</div>
 
-        <form action="#" class="sp-form">
+        <form action="/form-handler.php" class="sp-form ajax-form" id="callback-form">
+            <input type="hidden" name="form_id" value="callback">
             <div class="sp-form-group">
-                <input type="text" class="sp-form-control" name="field1" value="">
+                <input type="text" class="sp-form-control" name="name" value="" placeholder="Ваше имя">
             </div>
             <div class="sp-form-group">
-                <input type="text" class="sp-form-control" name="field2" value="">
+                <input type="text" class="sp-form-control" name="email" value="" placeholder="Ваш email">
             </div>
             <div class="sp-form-group">
-                <input type="text" class="sp-form-control" name="field3" value="">
+                <input type="text" class="sp-form-control" name="phone" value="" placeholder="Ваш телефон">
             </div>
             <div class="sp-form-group">
-                <select name="field4" class="sp-form-control">
+                <select name="service" class="sp-form-control">
                     <option value="1">Услуга</option>
                 </select>
             </div>
