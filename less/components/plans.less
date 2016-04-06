@@ -4,13 +4,117 @@
     .sp-plan-item {
         position: relative;
         text-align: center;
-        padding-top: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
         height: 389px;
+        width: 188px;
+        padding-top: 9px;
+        font-family: 'DinDisplayPro-Light';
+        font-size: 16px;
+
+        &:not(:last-child),
+        &:not(:first-child) {
+            margin: 0 5px;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .sp-plan-img {
+            margin-bottom: 7px;
+            height: 82px;
+        }
+
+        &:after {
+            content: '';
+            height: 100%;
+            width: 1px;
+            background: #ebebeb;
+            position: absolute;
+            top: 0;
+            right: -5px;
+        }
 
         .sp-plan-head {
             color: #00b2de;
+            font-size: 18px;
+            font-family: 'DinDisplayPro-Bold';
+            margin-bottom: 10px;
+            height: 46px;
+            max-height: 46px;
+            overflow: hidden;
+        }
+
+        .services {
+            text-align: left;
+            height: 243px;
+        }
+
+        &.sp-plan-item-2 {
+            .sp-plan-head {
+                color: #32c374;
+            }
+
+            .hover {
+                background: #32c374;
+            }
+
+            .sp-plan-element {
+                &.border-bottom {
+                    border-bottom: 1px solid #32c374;
+                }
+            }
+        }
+
+        &.sp-plan-item-3 {
+            .sp-plan-head {
+                color: #c61da1;
+            }
+
+            .hover {
+                background: #c61da1;
+            }
+
+            .sp-plan-element {
+                &.border-bottom {
+                    border-bottom: 1px solid #c61da1;
+                }
+            }
+        }
+
+        &.sp-plan-item-4 {
+            .sp-plan-head {
+                color: #1280c6;
+            }
+
+            .hover {
+                background: #1280c6;
+            }
+
+            .sp-plan-element {
+                &.border-bottom {
+                    border-bottom: 1px solid #1280c6;
+                }
+            }
+        }
+
+        &.sp-plan-item-5 {
+            .sp-plan-head {
+                color: #f23636;
+            }
+
+            .hover {
+                background: #f23636;
+            }
+
+            .sp-plan-element {
+                &.border-bottom {
+                    border-bottom: 1px solid #f23636;
+                }
+            }
         }
 
         &:hover .hover {
@@ -19,10 +123,10 @@
         }
 
         .hover {
-            padding-top: 10px;
-            padding-left: 5px;
-            padding-right: 5px;
             position: absolute;
+            padding: 0 8px;
+            padding-top: 9px;
+            box-sizing: border-box;
             top: 0;
             left: 0;
             width: 100%;
@@ -36,6 +140,10 @@
             .sp-plan-head {
                 color: white;
             }
+
+            .services {
+                text-align: center;
+            }
         }
     }
 
@@ -47,6 +155,77 @@
         &.with-border {
             border: 1px solid white;
             border-radius: 5px;
+        }
+    }
+
+    .sp-plan-element.with-border {
+        text-decoration: none;
+        display: block;
+        color: white;
+    }
+
+    .services {
+        .sp-plan-element.with-border {
+            margin-bottom: 30px;
+        }
+    }
+
+    .sp-plan-item-1 {
+        & > .services {
+            .sp-plan-element {
+                padding: 10px 0;
+            }
+            .sp-plan-element:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .sp-plan-item-2 {
+        & > .services {
+            .sp-plan-element {
+                padding: 3px 0;
+            }
+
+            .sp-plan-element:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .sp-plan-item-3 {
+        & > .services {
+            .sp-plan-element {
+                padding: 3px 0;
+            }
+
+            .sp-plan-element:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .sp-plan-item-4 {
+        & > .services {
+            .sp-plan-element {
+                padding: 6px 0;
+            }
+
+            .sp-plan-element:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .sp-plan-item-5 {
+        & > .services {
+            .sp-plan-element {
+                padding: 7px 0;
+            }
+
+            .sp-plan-element:first-child {
+                padding-top: 0;
+            }
         }
     }
 }
