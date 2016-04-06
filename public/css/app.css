@@ -330,6 +330,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 15px;
 }
 .sp-plans-row .sp-plan-item {
   position: relative;
@@ -354,7 +355,7 @@
   margin-bottom: 7px;
   height: 82px;
 }
-.sp-plans-row .sp-plan-item:after {
+.sp-plans-row .sp-plan-item:not(:last-child):after {
   content: '';
   height: 100%;
   width: 1px;
@@ -481,6 +482,100 @@
 }
 .sp-plans-row .sp-plan-item-5 > .services .sp-plan-element:first-child {
   padding-top: 0;
+}
+.sp-steps-row {
+  background: url(../img/sp-steps-bg.png) no-repeat;
+  height: 439px;
+  color: white;
+  padding-top: 15px;
+  box-sizing: border-box;
+  padding-left: 25px;
+}
+.sp-steps-row .sp-steps-header {
+  font-family: 'DinDisplayPro-Bold';
+  font-size: 30px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  padding-left: 5px;
+  margin-bottom: 15px;
+}
+.sp-steps-row .left {
+  float: left;
+  width: 65%;
+}
+.sp-steps-row .left .sp-steps {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.sp-steps-row .left .sp-steps .sp-step {
+  position: relative;
+  padding-left: 42px;
+  height: 90px;
+  max-height: 90px;
+}
+.sp-steps-row .left .sp-steps .sp-step.sp-step-success:before {
+  background: url(../img/step-check.png) no-repeat;
+  width: 40px;
+  height: 36px;
+  left: -5px;
+}
+.sp-steps-row .left .sp-steps .sp-step:not(:last-child):after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 13px;
+  height: 67px;
+  border-left: 1px solid white;
+}
+.sp-steps-row .left .sp-steps .sp-step:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/step-bullet.png) no-repeat;
+  width: 26px;
+  height: 26px;
+}
+.sp-steps-row .left .sp-steps .sp-step .sp-step-header {
+  font-family: 'DinDisplayPro-Bold';
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.sp-steps-row .right {
+  float: left;
+  width: 248px;
+  margin-left: 65px;
+}
+.sp-steps-row .right .sp-steps-header {
+  text-align: center;
+}
+.sp-steps-row .sp-form-group {
+  margin-bottom: 17px;
+}
+.sp-steps-row .sp-form-control {
+  background: rgba(46, 76, 35, 0.61);
+  border: 1px solid white;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 39px;
+  padding: 0 5px;
+  color: white;
+}
+.sp-steps-row .sp-submit {
+  height: 39px;
+  text-align: center;
+  background: white;
+  color: #256e01;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  font-family: 'DinDisplayPro-Bold';
+  line-height: 39px;
+  font-size: 18px;
 }
 body.namespace-seopage {
   background: url("../img/bg.jpg");

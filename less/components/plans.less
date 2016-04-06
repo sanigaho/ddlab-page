@@ -1,5 +1,6 @@
 .sp-plans-row {
     display: flex;
+    margin-bottom: 15px;
 
     .sp-plan-item {
         position: relative;
@@ -28,7 +29,7 @@
             height: 82px;
         }
 
-        &:after {
+        &:not(:last-child):after {
             content: '';
             height: 100%;
             width: 1px;
