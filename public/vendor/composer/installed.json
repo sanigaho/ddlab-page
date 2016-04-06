@@ -159,12 +159,12 @@
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/nikitakiselev/lpforms.git",
+            "url": "https://github.com/digitalhammer/lpforms.git",
             "reference": "de28b6dcc48aa26117ed4c9b852c4df412cb0a0e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/nikitakiselev/lpforms/zipball/de28b6dcc48aa26117ed4c9b852c4df412cb0a0e",
+            "url": "https://api.github.com/repos/digitalhammer/lpforms/zipball/de28b6dcc48aa26117ed4c9b852c4df412cb0a0e",
             "reference": "de28b6dcc48aa26117ed4c9b852c4df412cb0a0e",
             "shasum": ""
         },
